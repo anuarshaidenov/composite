@@ -7,6 +7,7 @@ import HamburgerIcon from '../assets/hamburger-icon.svg';
 import CompositeLogo from '../assets/composite-logo.svg';
 import SearchIcon from '../assets/search-icon.svg';
 import MobileMenu from './MobileMenu';
+import PrimaryButton from './PrimaryButton';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
@@ -32,8 +33,20 @@ const Header = () => {
           <div className="logo-container relative h-10 w-36">
             <Image src={CompositeLogo} alt="Composite Logo" layout="fill" />
           </div>
-          <div className="flex items-center gap-8 md:hidden">
-            <button className="relative w-5 h-5">
+          <div className="flex items-center gap-8 lg:hidden">
+            <div className="hidden md:block">
+              <Link href="/signin">
+                <PrimaryButton type="button" isPrimary={false}>
+                  Sign In
+                </PrimaryButton>
+              </Link>
+            </div>
+            <div className="hidden md:block">
+              <Link href="/signup">
+                <PrimaryButton type="button">Join Now</PrimaryButton>
+              </Link>
+            </div>
+            <button type="button" className="relative w-5 h-5">
               <Image src={SearchIcon} alt="Search" layout="fill" />
             </button>
             <button
@@ -44,21 +57,55 @@ const Header = () => {
               <Image src={HamburgerIcon} alt="Hamburger Logo" layout="fill" />
             </button>
           </div>
-          <nav className="hidden md:block">
-            <ul className="flex items-center gap-10">
-              <li className={`${setActiveLink('/')}`}>
-                <Link href="/">Home</Link>
-              </li>
-              <li className={`${setActiveLink('/about')}`}>
-                <Link href="/about">About</Link>
-              </li>
-              <li className={`${setActiveLink('/team')}`}>
-                <Link href="/team">Our Team</Link>
-              </li>
-              <li className={`${setActiveLink('/products')}`}>
-                <Link href="/products">Products</Link>
-              </li>
-            </ul>
+          <nav className="hidden lg:block">
+            <div className="flex items-center gap-5 xl:gap-12">
+              <ul className="flex items-center gap-5 xl:gap-8">
+                <li className={`${setActiveLink('/')} text-sm lg:text-base`}>
+                  <Link href="/">Home</Link>
+                </li>
+                <li
+                  className={`${setActiveLink(
+                    '/universities'
+                  )} text-sm lg:text-base`}
+                >
+                  <Link href="/universities">Universities</Link>
+                </li>
+                <li
+                  className={`${setActiveLink(
+                    '/scholarships'
+                  )} text-sm lg:text-base`}
+                >
+                  <Link href="/scholarships">Scholarships</Link>
+                </li>
+                <li
+                  className={`${setActiveLink('/majors')} text-sm lg:text-base`}
+                >
+                  <Link href="/majors">Majors</Link>
+                </li>
+                <li
+                  className={`${setActiveLink(
+                    '/articles'
+                  )} text-sm lg:text-base`}
+                >
+                  <Link href="/articles">Articles</Link>
+                </li>
+                <li className={`pb-2`}>
+                  <button type="button" className="relative w-5 h-5">
+                    <Image src={SearchIcon} alt="Search" layout="fill" />
+                  </button>
+                </li>
+              </ul>
+              <ul className="flex items-center gap-3">
+                <Link href="/signin">
+                  <PrimaryButton type="button" isPrimary={false}>
+                    Sign In
+                  </PrimaryButton>
+                </Link>
+                <Link href="/signup">
+                  <PrimaryButton type="button">Join Now</PrimaryButton>
+                </Link>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>

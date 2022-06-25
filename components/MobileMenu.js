@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import closeIcon from '../assets/close-icon.svg';
+import PrimaryButton from './PrimaryButton';
 
 const MobileMenu = ({ className = '', handleMobileMenuClick, isMenuOpen }) => {
   const router = useRouter();
@@ -15,11 +16,11 @@ const MobileMenu = ({ className = '', handleMobileMenuClick, isMenuOpen }) => {
       {isMenuOpen && (
         <div
           onClick={handleMobileMenuClick}
-          className="fixed w-screen h-screen left-0 top-0 z-40 bg-colorPrimary opacity-20 md:hidden"
+          className="fixed w-screen h-screen left-0 top-0 z-40 bg-colorPrimary opacity-20 lg:hidden"
         ></div>
       )}
       <div
-        className={`md:hidden p-4 pt-10 w-10/12 fixed z-50 right-0 top-0 h-screen transition-transform duration-300 bg-colorWhite border-l ${className}`}
+        className={`lg:hidden p-4 pt-10 w-10/12 fixed z-50 right-0 top-0 h-screen transition-transform duration-300 bg-colorWhite border-l ${className}`}
       >
         <div className="relative w-6 h-6 mb-28 ml-auto">
           <button type="button" className="" onClick={handleMobileMenuClick}>
@@ -58,18 +59,16 @@ const MobileMenu = ({ className = '', handleMobileMenuClick, isMenuOpen }) => {
             >
               <Link href="/articles">Articles</Link>
             </li>
-            <li className={``} onClick={handleMobileMenuClick}>
+            <li className={`md:hidden`} onClick={handleMobileMenuClick}>
               <Link href="/signin">
-                <button className="bg-colorPale rounded-2xl py-4 px-8 text-[#544E5D] font-semibold">
+                <PrimaryButton type="button" isPrimary={false}>
                   Sign In
-                </button>
+                </PrimaryButton>
               </Link>
             </li>
-            <li className={``} onClick={handleMobileMenuClick}>
+            <li className={`md:hidden`} onClick={handleMobileMenuClick}>
               <Link href="/signup">
-                <button className="bg-colorPrimary rounded-2xl py-4 px-8 text-colorPale font-semibold">
-                  Join Now
-                </button>
+                <PrimaryButton type="button">Join Now</PrimaryButton>
               </Link>
             </li>
           </ul>

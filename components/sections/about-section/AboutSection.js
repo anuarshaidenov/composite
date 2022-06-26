@@ -10,7 +10,7 @@ const AboutSection = () => {
           <h3 className="text-colorPrimary font-semibold text-xl uppercase mb-2">
             What we do
           </h3>
-          <h2 className="font-semibold text-3xl mb-7">
+          <h2 className="section-title mb-7">
             About <span className="text-colorPrimary">Composite</span>
           </h2>
           <p className="">

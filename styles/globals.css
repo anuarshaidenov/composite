@@ -4,7 +4,16 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  @apply bg-colorWhite;
+  @apply bg-colorWhite text-colorStone;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-colorBlack;
 }
 
 .container {
@@ -21,4 +30,17 @@ body {
 
 .btn-shadow {
   box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+}
+
+.section-title {
+  @apply font-semibold text-3xl;
+}
+
+.offer-item {
+  box-shadow: 0px 7px 25px rgba(143, 134, 196, 0.03);
+  @apply rounded-2xl px-8 py-10 transition-shadow duration-200;
+}
+
+.offer-item:hover {
+  box-shadow: 0px 19px 33px rgba(143, 134, 196, 0.18);
 }

@@ -5,75 +5,22 @@ import ImageGraduation from '../../assets/hero-section/image-graduates.png';
 import ImageUni from '../../assets/hero-section/image-uni.png';
 import ImageLibrary from '../../assets/hero-section/image-library.png';
 
-let multiplier = 1;
-
-const initialSizes = {
-  waveElement: { size: `w-[${800 * multiplier}px]` },
-  imageGirl: { size: `w-[${80 * multiplier}px] h-[${80 * multiplier}px]` },
-  imageGraduation: {
-    size: `w-[${128 * multiplier}px] h-[${128 * multiplier}px]`,
-  },
-  imageUni: { size: `w-[${80 * multiplier}px] h-[${80 * multiplier}px]` },
-  imageLibrary: { size: `w-[${64 * multiplier}px] h-[${64 * multiplier}px]` },
-};
-
-// const hh = (
-//   <>
-//     <div className="absolute left-[50%] bottom-[450px] -z-10">
-//       <div className={`relative w-20 h-20`}>
-//         <Image src={ImageGirl} alt="girl" layout="fill" />
-//       </div>
-//     </div>
-//     <div className="absolute left-[35%] bottom-[300px] -z-10">
-//       <div className={`relative w-32 h-32`}>
-//         <Image src={ImageGraduation} alt="Graduation" layout="fill" />
-//       </div>
-//     </div>
-//     <div className="absolute right-[5%] bottom-[380px] -z-10">
-//       <div className={`relative w-28 h-28`}>
-//         <Image src={ImageUni} alt="University" layout="fill" />
-//       </div>
-//     </div>
-//     <div className="absolute left-[70%] bottom-[300px] -z-10">
-//       <div className={`relative w-16 h-16`}>
-//         <Image src={ImageLibrary} alt="Library" layout="fill" />
-//       </div>
-//     </div>
-//   </>
-// );
-
 const HeroIllustration = () => {
   return (
-    <div className="relative h-[1000px] sm:h-[1200px] max-w-[832px] mx-auto lg:absolute lg:w-[950px] xl:w-[1200px] xl:h-[1200px] lg:-right-40 xl:right-0 lg:top-40">
-      <div className="absolute left-[50%] top-[150px] lg:left-[40%] lg:top-[30px] -z-10">
-        <div
-          className={`image-girl relative w-20 sm:w-28 lg:w-[150px] lg:h-[150px] h-20 sm:h-28`}
-        >
-          <Image src={ImageGirl} alt="girl" layout="fill" />
-        </div>
+    <div className="absolute -right-[18rem] sm:-right-[10rem] md:-right-[18rem] lg:-right-[10rem] -bottom-[7rem] md:bottom-auto md:-top-[2rem] lg:-top-[13rem] -z-10 w-[790px] md:w-[900px] lg:w-[1300px]">
+      <div className="absolute left-[21rem] sm:left-[25rem] lg:left-[42rem] top-[9rem] lg:top-[15rem] w-20 h-20 md:w-28 md:h-28">
+        <Image src={ImageGirl} alt="Girl" layout="fill" />
       </div>
-      <div className="absolute left-[35%] sm:left-[30%] top-[250px] sm:top-[280px] lg:left-[23%] lg:top-[220px] -z-10">
-        <div
-          className={`image-graduation relative w-32 sm:w-52 lg:w-[320px] lg:h-[320px] h-32 sm:h-52`}
-        >
-          <Image src={ImageGraduation} alt="Graduation" layout="fill" />
-        </div>
+      <div className="absolute left-[15rem] sm:left-[20rem] top-[14rem] md:top-[16rem] lg:top-[23rem] lg:left-[27rem] w-32 h-32 md:w-40 md:h-40 lg:w-[17rem] lg:h-[17rem]">
+        <Image src={ImageGraduation} alt="Graduation" layout="fill" />
       </div>
-      <div className="absolute left-[78%] sm:left-[65%] top-[210px] lg:left-[62%] lg:top-[142px] -z-10">
-        <div
-          className={`image-uni relative w-20 h-20 sm:w-48 sm:h-48 lg:w-[240px] lg:h-[240px]`}
-        >
-          <Image src={ImageUni} alt="University" layout="fill" />
-        </div>
+      <div className="absolute left-[24rem] sm:left-[29rem] md:left-[31rem] top-[13rem] w-24 h-24 md:w-36 md:h-36 lg:w-[13rem] lg:h-[13rem] lg:top-[20rem] lg:left-[47rem]">
+        <Image src={ImageUni} alt="University" layout="fill" />
       </div>
-      <div className="absolute left-[70%] top-[300px] sm:top-[420px] -z-10">
-        <div
-          className={`image-library relative w-12 sm:w-20 sm:h-20 h-12 lg:h-[130px] lg:w-[130px]`}
-        >
-          <Image src={ImageLibrary} alt="Library" layout="fill" />
-        </div>
+      <div className="absolute left-[24rem] sm:left-[29rem] md:left-[33rem] top-[21rem] md:top-[23rem] w-16 h-16 md:w-20 md:h-20 lg:top-[34rem] lg:left-[47rem]">
+        <Image src={ImageLibrary} alt="Library" layout="fill" />
       </div>
-      <div className={`absolute -bottom-1/3 -left-1/2 w-[200%] h-[200%] -z-20`}>
+      <div className="w-full h-full relative -z-10 -rotate-6">
         <WaveElement />
       </div>
     </div>

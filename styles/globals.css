@@ -8,5 +8,13 @@ body {
 }
 
 .container {
-  @apply w-[95%] max-w-7xl mx-auto;
+  @apply w-[95%] max-w-[1380px] mx-auto;
+}
+
+.about-image {
+  @apply before:w-[98%] before:md:w-[417px] before:md:h-[417px] before:h-[98%] before:absolute before:-top-5 before:md:-top-[52px] before:md:-left-[47px] before:-left-2 before:content-[''] before:rounded-md;
+}
+
+.about-image::before {
+  background-color: rgba(196, 196, 196, 0.12);
 }

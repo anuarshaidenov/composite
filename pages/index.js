@@ -1,10 +1,23 @@
 import Image from 'next/image';
 import CirclesText from '../assets/hero-section/circles-0.svg';
+import HeroIllustration from '../components/hero-section/Illustration';
+
+let multiplier = 2;
+
+const initialSizes = {
+  waveElement: { size: `w-[${800 * multiplier}px]` },
+  imageGirl: { size: `w-[${80 * multiplier}px] h-[${80 * multiplier}px]` },
+  imageGraduation: {
+    size: `w-[${128 * multiplier}px] h-[${128 * multiplier}px]`,
+  },
+  imageUni: { size: `w-[${80 * multiplier}px] h-[${80 * multiplier}px]` },
+  imageLibrary: { size: `w-[${64 * multiplier}px] h-[${64 * multiplier}px]` },
+};
 
 export default function Home() {
   return (
     <>
-      <section className="pt-40 md:pt-60">
+      <section className="pt-40 md:pt-60 overflow-hidden relative lg:h-[120vh]">
         <div className="container">
           <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl md:leading-[70px] lg:leading-[85px] mb-10 md:mb-16 relative">
             <div className="absolute -top-8 md:-top-12 -left-4 md:-left-9 lg:-left-8 -z-10">
@@ -47,6 +60,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        <HeroIllustration />
       </section>
     </>
   );

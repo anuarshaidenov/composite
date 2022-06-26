@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import CirclesText from '../../assets/hero-section/circles-0.svg';
-import HeroIllustration from '../../components/hero-section/Illustration';
+import CirclesText from '../../../assets/hero-section/circles-0.svg';
+import HeroIllustration from './Illustration';
 
 const HeroSection = () => {
   return (

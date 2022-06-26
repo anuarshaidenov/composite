@@ -60,14 +60,14 @@ const MobileMenu = ({ className = '', handleMobileMenuClick, isMenuOpen }) => {
               <Link href="/articles">Articles</Link>
             </li>
             <li className={`md:hidden`} onClick={handleMobileMenuClick}>
-              <Link href="/signin">
+              <Link href="/signin" passHref>
                 <PrimaryButton type="button" isPrimary={false}>
                   Sign In
                 </PrimaryButton>
               </Link>
             </li>
             <li className={`md:hidden`} onClick={handleMobileMenuClick}>
-              <Link href="/signup">
+              <Link href="/signup" passHref>
                 <PrimaryButton type="button">Join Now</PrimaryButton>
               </Link>
             </li>

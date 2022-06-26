@@ -104,7 +104,9 @@ const Header = () => {
                   </PrimaryButton>
                 </Link>
                 <Link href="/signup">
-                  <PrimaryButton type="button">Join Now</PrimaryButton>
+                  <PrimaryButton className="btn-shadow" type="button">
+                    Join Now
+                  </PrimaryButton>
                 </Link>
               </ul>
             </div>

@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-import AboutImage from '../../assets/about-section/about-image.png';
+import AboutImage from '../../../assets/about-section/about-image.png';
 
 const AboutSection = () => {
   return (
     <section className="py-10 md:py-28">
       <div className="container flex flex-col md:flex-row-reverse md:items-start gap-10 md:gap-20">
-        <div className="basis-1/2">
+        <div className="md:basis-1/2">
           <h3 className="text-colorPrimary font-semibold text-xl uppercase mb-2">
             What we do
           </h3>
@@ -34,7 +34,7 @@ const AboutSection = () => {
             recommendations.
           </p>
         </div>
-        <div className="relative w-[95%] h-[300px] md:h-[498px] mx-auto about-image basis-1/2">
+        <div className="relative w-[95%] h-[300px] md:h-[498px] mx-auto about-image md:basis-1/2">
           <Image
             src={AboutImage}
             alt="Girl Looking up"

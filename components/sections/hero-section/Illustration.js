@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import WaveElement from '../svg/WaveElement';
-import ImageGirl from '../../assets/hero-section/image-girl.png';
-import ImageGraduation from '../../assets/hero-section/image-graduates.png';
-import ImageUni from '../../assets/hero-section/image-uni.png';
-import ImageLibrary from '../../assets/hero-section/image-library.png';
+import WaveElement from '../../svg/WaveElement';
+import ImageGirl from '../../../assets/hero-section/image-girl.png';
+import ImageGraduation from '../../../assets/hero-section/image-graduates.png';
+import ImageUni from '../../../assets/hero-section/image-uni.png';
+import ImageLibrary from '../../../assets/hero-section/image-library.png';
 
 const HeroIllustration = () => {
   return (

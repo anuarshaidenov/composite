@@ -17,7 +17,7 @@ h6 {
 }
 
 .container {
-  @apply w-[95%] max-w-[1380px] mx-auto;
+  @apply w-[90%] max-w-[1380px] mx-auto;
 }
 
 .about-image {
@@ -43,4 +43,20 @@ h6 {
 
 .offer-item:hover {
   box-shadow: 0px 19px 33px rgba(143, 134, 196, 0.18);
+}
+
+.section-subtitle {
+  @apply text-colorPrimary font-semibold text-xl uppercase;
+}
+
+.features-list {
+  box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.07);
+}
+
+.features-list-item--active {
+  box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+}
+
+.uni-rankings-list {
+  box-shadow: 0px 43px 61px rgba(0, 0, 0, 0.13);
 }

@@ -7,9 +7,7 @@ const AboutSection = () => {
     <section className="py-10 md:py-28">
       <div className="container flex flex-col md:flex-row-reverse md:items-start gap-10 md:gap-20">
         <div className="md:basis-1/2">
-          <h3 className="text-colorPrimary font-semibold text-xl uppercase mb-2">
-            What we do
-          </h3>
+          <h3 className="section-subtitle mb-2">What we do</h3>
           <h2 className="section-title mb-7">
             About <span className="text-colorPrimary">Composite</span>
           </h2>

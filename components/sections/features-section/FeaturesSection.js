@@ -1,81 +1,19 @@
 import FeaturesListItem from './FeaturesListItem';
-import StarUni from '../../svg/StarUni';
-
-const features = [
-  {
-    id: 1,
-    title: 'Best Places to Study',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-  },
-  {
-    id: 2,
-    title: 'Search scholarships',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-  },
-  {
-    id: 3,
-    title: 'figuring out what should you study',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-  },
-];
-
-const universities = [
-  {
-    id: 1,
-    name: 'abc university',
-    rank: '5th',
-  },
-  {
-    id: 2,
-    name: 'abc university',
-    rank: '4th',
-  },
-  {
-    id: 3,
-    name: 'abc university',
-    rank: '3rd',
-  },
-  {
-    id: 4,
-    name: 'abc university',
-    rank: '2nd',
-  },
-  {
-    id: 5,
-    name: 'abc university',
-    rank: '1st',
-  },
-  {
-    id: 6,
-    name: 'abc university',
-    rank: '6th',
-  },
-  {
-    id: 7,
-    name: 'abc university',
-    rank: '7th',
-  },
-  {
-    id: 8,
-    name: 'abc university',
-    rank: '8th',
-  },
-];
+import { features, universities } from './featuresData';
+import FeaturesUniItem from './FeaturesUniItem';
+import EggSVG from '../../svg/Egg';
 
 const FeaturesSection = () => {
   return (
-    <section className="py-20">
-      <div className="container flex flex-col gap-10">
-        <div>
-          <h3 className="section-subtitle">What we have</h3>
-          <h2 className="section-title">
+    <section className="py-20 overflow-hidden">
+      <div className="container flex flex-col md:flex-row-reverse md:items-start gap-10 lg:gap-20 xl:gap-32">
+        <div className="md:basis-1/2">
+          <h3 className="section-subtitle mb-5">What we have</h3>
+          <h2 className="section-title mb-10">
             <span className="text-colorSecondary">Best</span> Universities,
             Scholarships & programs
           </h2>
-          <ul className="rounded-2xl features-list overflow-hidden">
+          <ul className="rounded-2xl features-list overflow-hidden bg-colorWhite">
             {features &&
               features.map((feature) => (
                 <FeaturesListItem
@@ -86,31 +24,22 @@ const FeaturesSection = () => {
               ))}
           </ul>
         </div>
-        <div>
-          <ul className="uni-rankings-list rounded-2xl">
+        <div className="md:basis-1/2 relative">
+          <div className="absolute h-[180%] -left-1/2 translate-x-[17%] -top-[17rem] -z-20">
+            <EggSVG />
+          </div>
+          <ul className="uni-rankings-list rounded-2xl bg-colorWhite">
             <li className="px-7 py-6 flex items-center justify-between border-b-2">
-              <h4 className="font-semibold text-md">Best places to study</h4>
-              <span className="font-semibold text-md text-colorBlack">
+              <h4 className="font-semibold text-md md:text-2xl">
+                Best places to study
+              </h4>
+              <span className="font-semibold text-md md:text-2xl text-colorBlack">
                 Rank
               </span>
             </li>
             {universities &&
               universities.map((university) => (
-                <li
-                  key={university.id}
-                  className={`px-7 py-6 flex items-center justify-between bg-colorWhite ${
-                    university.rank === '1st' &&
-                    'scale-105 rounded-xl shadow-md'
-                  }`}
-                >
-                  <h4 className="flex items-center gap-2">
-                    <div className="w-5 h-5">
-                      <StarUni />
-                    </div>
-                    {university.name}
-                  </h4>
-                  <span className="">{university.rank}</span>
-                </li>
+                <FeaturesUniItem key={university.id} university={university} />
               ))}
           </ul>
         </div>

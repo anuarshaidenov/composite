@@ -14,7 +14,7 @@ const FeaturesListItem = ({ title, description }) => {
 
   return (
     <li
-      className={`p-8 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md transition-shadow duration-200 ${itemShadow}`}
+      className={`p-8 flex items-center justify-between cursor-pointer shadow-sm md:hover:shadow-md transition-shadow duration-200 ${itemShadow}`}
       onClick={handleItemClick}
     >
       <div>
@@ -23,7 +23,10 @@ const FeaturesListItem = ({ title, description }) => {
         </h4>
         {isItemOpen && <p className="text-sm md:text-base">{description}</p>}
       </div>
-      <button type="button" className={`w-10 h-[10px] ${arrowRotation}`}>
+      <button
+        type="button"
+        className={`w-10 h-[10px] transition-transform ${arrowRotation}`}
+      >
         <SmallArrow fill={arrowFillColor} />
       </button>
     </li>

@@ -3,6 +3,7 @@ import FeaturesSection from '../components/sections/features-section/FeaturesSec
 import GetStartedSection from '../components/sections/get-started-section/GetStartedSection';
 import HeroSection from '../components/sections/hero-section/HeroSection';
 import OffersSection from '../components/sections/offers-section/OffersSection';
+import ToolsSection from '../components/sections/tools-section/ToolsSection';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <OffersSection />
       <FeaturesSection />
       <GetStartedSection />
+      <ToolsSection />
     </>
   );
 }

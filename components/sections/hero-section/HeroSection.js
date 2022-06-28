@@ -30,16 +30,16 @@ const HeroSection = () => {
         <div>
           <h3 className="font-semibold text-lg md:text-xl mb-4">What we do</h3>
           <ul className="flex items-center gap-2 flex-wrap justify-start">
-            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl">
+            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl bg-colorWhite">
               <span>Universities</span>
             </li>
-            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl">
+            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl bg-colorWhite">
               <span>Scholarships</span>
             </li>
-            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl">
+            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl bg-colorWhite">
               <span>Majors</span>
             </li>
-            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl">
+            <li className="px-4 py-2 border border-colorPrimary text-colorPrimary rounded-3xl bg-colorWhite">
               <span>Articles</span>
             </li>
           </ul>

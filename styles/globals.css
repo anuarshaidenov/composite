@@ -60,3 +60,8 @@ h6 {
 .uni-rankings-list {
   box-shadow: 0px 43px 61px rgba(0, 0, 0, 0.13);
 }
+
+.footer-link:hover path {
+  transition: fill 0.3s;
+  fill: #0364ff;
+}

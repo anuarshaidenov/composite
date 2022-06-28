@@ -10,7 +10,7 @@ const GetStartedOption = ({ optionParams }) => {
     <li
       className={`${backgroundColorClass} flex flex-col md:flex-row items-center md:items-start md:justify-between overflow-hidden`}
     >
-      <div className="pl-12 py-10 flex flex-col items-center md:items-start gap-7">
+      <div className="px-12 py-10 flex flex-col items-center md:items-start gap-7">
         <h4 className="font-semibold text-xl md:text-2xl text-center md:text-left">
           {title}
         </h4>

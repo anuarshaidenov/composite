@@ -5,7 +5,7 @@ import HeroIllustration from './Illustration';
 const HeroSection = () => {
   return (
     <section className="pt-40 md:pt-60 overflow-hidden">
-      <div className="container relative h-[120vh] max-h-[800px]">
+      <div className="container relative h-[120vh] max-h-[800px] md:max-h-[600px]">
         <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl md:leading-[70px] lg:leading-[85px] mb-10 md:mb-16 relative">
           <div className="absolute -top-8 md:-top-12 -left-4 md:-left-9 lg:-left-8 -z-10">
             <div className="w-10 md:w-16 h-10 md:h-16 relative">

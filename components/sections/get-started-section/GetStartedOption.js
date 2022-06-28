@@ -8,15 +8,15 @@ const GetStartedOption = ({ optionParams }) => {
 
   return (
     <li
-      className={`${backgroundColorClass} flex flex-col md:flex-row items-center md:items-start md:justify-between`}
+      className={`${backgroundColorClass} flex flex-col md:flex-row items-center md:items-start md:justify-between overflow-hidden`}
     >
-      <div className="px-12 py-10 flex flex-col items-center md:items-start gap-7">
-        <h4 className="font-semibold text-xl md:text-2xl lg:text-xl text-center md:text-left">
+      <div className="pl-12 py-10 flex flex-col items-center md:items-start gap-7">
+        <h4 className="font-semibold text-xl md:text-2xl text-center md:text-left">
           {title}
         </h4>
         <Link href={buttonLink}>
           <PrimaryButton type="button">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               {buttonText}
               <div className="w-[20px] h-[12px]">
                 <BtnArrow />
@@ -25,7 +25,7 @@ const GetStartedOption = ({ optionParams }) => {
           </PrimaryButton>
         </Link>
       </div>
-      <div className="self-center px-3">{illustration}</div>
+      <div className="self-center pr-3 translate-y-8">{illustration}</div>
     </li>
   );
 };

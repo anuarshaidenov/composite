@@ -91,8 +91,8 @@ const Stat = ({ className = '' }) => (
 
 const ToolsSection = () => {
   return (
-    <section className="py-20">
-      <div className="container flex flex-col md:flex-row-reverse md:justify-between gap-10">
+    <section className="py-20 overflow-hidden">
+      <div className="container flex flex-col items-center md:items-start md:flex-row-reverse md:justify-between gap-10">
         <div className="md:basis-1/2 md:text-right">
           <h3 className="section-subtitle mb-6 md:mb-10">
             Best place for your future
@@ -111,13 +111,6 @@ const ToolsSection = () => {
           </p>
         </div>
         <div className="grid grid-cols-5 grid-rows-6 gap-4 md:gap-10 h-[545px] max-w-[536px] md:basis-1/2">
-          {
-            // <Rating className="col-span-1 row-span-1 self-center justify-self-center" />
-            // <Scholarship className="col-span-2 row-span-2 self-end justify-self-end" />
-            // <Chances className="col-span-1 row-span-1 self-center justify-self-start" />
-            // <Applications className="col-span-2 row-span-1 self-start justify-self-start" />
-            // <Stat className="col-span-1 row-span-1 self-center justify-self-center" />
-          }
           <div className="borderls col-span-2 row-span-2 flex items-center justify-center">
             <Rating />
           </div>

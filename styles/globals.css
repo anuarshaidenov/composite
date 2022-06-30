@@ -73,3 +73,33 @@ h6 {
   gap: 1rem;
   max-width: 586px;
 }
+
+.hero-graduation::after {
+  content: url(../assets/hero-section/waves.svg);
+  z-index: 20;
+  position: relative;
+  top: 50%;
+  left: -20%;
+  width: 10px;
+  height: 5px;
+}
+
+.hero-library::after {
+  content: url(../assets/hero-section/circles-2.svg);
+  z-index: 20;
+  position: relative;
+  top: 90px;
+  right: -50px;
+  width: 10px;
+  height: 5px;
+}
+
+.hero-university::after {
+  content: url(../assets/hero-section/circles-1.svg);
+  z-index: 20;
+  position: relative;
+  bottom: -80%;
+  right: -90%;
+  width: 10px;
+  height: 5px;
+}

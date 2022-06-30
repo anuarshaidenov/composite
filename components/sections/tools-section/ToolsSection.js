@@ -3,6 +3,7 @@ import StarRating from '../../svg/Star';
 import universityImage from '../../../assets/tools-section/university.png';
 import PersonImage from '../../../assets/tools-section/person.png';
 import Exponent from '../../svg/Exponent';
+import Parallax from '../../Parallax';
 
 const boxShadow = { boxShadow: '0px 8px 40px -2px rgba(6, 12, 59, 0.08)' };
 
@@ -112,19 +113,29 @@ const ToolsSection = () => {
         </div>
         <div className="grid grid-cols-5 grid-rows-6 gap-4 md:gap-10 h-[545px] max-w-[536px] md:basis-1/2">
           <div className="borderls col-span-2 row-span-2 flex items-center justify-center">
-            <Rating />
+            <Parallax>
+              <Rating />
+            </Parallax>
           </div>
           <div className="borderls col-span-3 row-span-4">
-            <Scholarship className="w-full h-full" />
+            <Parallax offset={20} className="w-full h-full">
+              <Scholarship className="w-full h-full" />
+            </Parallax>
           </div>
           <div className="borderls col-span-2 row-span-2">
-            <Chances className="w-full h-full" />
+            <Parallax>
+              <Chances className="w-full h-full" />
+            </Parallax>
           </div>
           <div className="borderls col-span-4 row-span-2">
-            <Applications className="w-full h-full" />
+            <Parallax>
+              <Applications className="w-full h-full" />
+            </Parallax>
           </div>
           <div className="borderls">
-            <Stat className="w-full h-full" />
+            <Parallax>
+              <Stat className="w-full h-full" />
+            </Parallax>
           </div>
         </div>
       </div>

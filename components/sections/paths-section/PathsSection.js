@@ -41,15 +41,17 @@ const PathsSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
-        <ul className="flex flex-col md:flex-row gap-10">
+        <ul className="flex flex-col md:flex-row gap-6">
           {paths.map((path) => (
             <Link key={path.id} href={path.href} passHref>
               <li
                 className="p-10 rounded-2xl bg-cover bg-center text-colorWhite h-[406px] flex flex-col items-start justify-end gap-4 md:basis-1/3 cursor-pointer hover:pb-16 transition-all duration-500"
                 style={{ backgroundImage: `url(${path.backgroundImage.src})` }}
               >
-                <h4 className="text-colorWhite text-2xl">{path.title}</h4>
-                <p>{path.description}</p>
+                <h4 className="text-colorWhite text-xl lg:text-2xl">
+                  {path.title}
+                </h4>
+                <p className="text-sm lg:text-base">{path.description}</p>
               </li>
             </Link>
           ))}

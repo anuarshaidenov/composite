@@ -5,11 +5,11 @@ const PrimaryButton = ({
   ...otherProps
 }) => {
   const btnColor = isPrimary
-    ? 'bg-colorPrimary text-colorPale'
-    : 'bg-colorPale text-[#544E5D]';
+    ? 'bg-colorPrimary text-colorPale hover:bg-[#0257e2]'
+    : 'bg-colorPale text-[#544E5D] hover:bg-[#ceced0]';
   return (
     <button
-      className={`${btnColor} rounded-2xl py-4 px-8 font-semibold ${className}`}
+      className={`${btnColor} rounded-2xl py-4 px-8 font-semibold hover:scale-95 transition-all duration-300 ${className}`}
       {...otherProps}
     >
       {children}

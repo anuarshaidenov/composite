@@ -2,6 +2,7 @@ import AboutSection from '../components/sections/about-section/AboutSection';
 import FeaturesSection from '../components/sections/features-section/FeaturesSection';
 import GetStartedSection from '../components/sections/get-started-section/GetStartedSection';
 import HeroSection from '../components/sections/hero-section/HeroSection';
+import NewsletterSection from '../components/sections/newsletter-section/NewsletterSection';
 import OffersSection from '../components/sections/offers-section/OffersSection';
 import PathsSection from '../components/sections/paths-section/PathsSection';
 import TestimonialsSection from '../components/sections/testimonials-section/TestimonialsSection';
@@ -18,6 +19,7 @@ export default function Home() {
       <ToolsSection />
       <PathsSection />
       <TestimonialsSection />
+      <NewsletterSection />
     </>
   );
 }
